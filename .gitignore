@@ -1,0 +1,5 @@
+.presentation-practice.local.json
+__pycache__/
+*.pyc
+dist/
+output/

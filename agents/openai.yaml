@@ -1,0 +1,4 @@
+interface:
+  display_name: "簡報逐步口說語料"
+  short_description: "把含動畫的簡報整理成 Click 截圖與逐句練習包"
+  default_prompt: "Use $build-presentation-practice to package my animated slides as a portable Click screenshot and EchoStory practice bundle."
