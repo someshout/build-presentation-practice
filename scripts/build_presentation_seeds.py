@@ -111,7 +111,8 @@ def build(markdown: Path, topic: str) -> list[dict]:
             continue
         visual_match = VISUAL_RE.search(line)
         if visual_match:
-            visual = visual_match.group(1).strip()
+            value = visual_match.group(1).strip()
+            visual = "" if value.lower() == "none" else value
             continue
         click_lines.append(line)
     flush_slide()

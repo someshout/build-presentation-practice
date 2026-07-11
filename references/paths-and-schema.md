@@ -65,6 +65,7 @@ Rules:
 - A Click owns one or more bilingual table rows.
 - Click indices start at `0` and remain contiguous within a slide.
 - Multiple sentences may share one Click image.
+- Use `<!-- visual: none -->` for a text-only Click that has no screenshot (e.g. an opening/closing segment). Validation and seed generation treat it as an intentional empty `visual_ref`, not a missing-file error.
 
 ## EchoStory runtime destination
 

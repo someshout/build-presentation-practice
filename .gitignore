@@ -1,4 +1,5 @@
 .presentation-practice.local.json
+.env.local
 __pycache__/
 *.pyc
 dist/

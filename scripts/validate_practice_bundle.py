@@ -54,6 +54,8 @@ def validate(bundle_root: Path) -> list[str]:
                 f"{markdown.relative_to(bundle_root)}: {len(clicks)} Click blocks but {len(visuals)} visual refs"
             )
         for value in visuals:
+            if value.strip().lower() == "none":
+                continue
             if not portable_relative(value):
                 errors.append(f"{markdown.relative_to(bundle_root)}: non-portable visual path: {value}")
                 continue
